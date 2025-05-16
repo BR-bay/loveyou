@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Apri Jonita Yenda yang Tercinta ❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff6b8b;
+            --secondary-color: #ffb8c6;
+            --accent-color: #ff4757;
+            --light-color: #fff0f3;
+            --dark-color: #3d0007;
+            --text-color: #4a1a23;
+            --shadow: 0 4px 15px rgba(255, 107, 139, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Background hearts */
+        .heart-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .heart {
+            position: absolute;
+            opacity: 0;
+            animation: fall 10s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Parisienne', cursive;
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .couple-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: var(--shadow);
+            margin: 1rem auto;
+        }
+
+        /* Navigation */
+        .nav-container {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-scroll {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            padding: 0.5rem 0;
+        }
+
+        .nav-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .nav-item {
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+            padding: 0.5rem 1.5rem;
+            margin: 0 0.2rem;
+            border-radius: 50px;
+            background-color: var(--light-color);
+            color: var(--text-color);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .nav-item.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Sections */
+        .section {
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-family: 'Parisienne', cursive;
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Love Messages */
+        .love-message {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .love-message::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+        }
+
+        .message-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .message-author {
+            font-weight: 600;
+            color: var(--accent-color);
+            text-align: right;
+            font-style: italic;
+        }
+
+        /* Gallery */
+        .gallery-container {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+            padding: 1rem 0;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .gallery::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallery-item {
+            scroll-snap-align: center;
+            flex: 0 0 80%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            color: white;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .gallery-nav {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .gallery-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+            cursor: pointer;
+        }
+
+        .gallery-dot.active {
+            background-color: var(--accent-color);
+        }
+
+        /* Love Letter */
+        .letter-container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .letter-paper {
+            background-color: #fff9fa;
+            border: 1px solid var(--secondary-color);
+            padding: 1.5rem;
+            min-height: 300px;
+            position: relative;
+        }
+
+        .letter-paper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 30px;
+            width: 2px;
+            height: 100%;
+            background-color: rgba(255, 107, 139, 0.2);
+        }
+
+        .letter-content {
+            font-size: 1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .letter-signature {
+            margin-top: 2rem;
+            text-align: right;
+            font-family: 'Parisienne', cursive;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .letter-date {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 0.5rem;
+        }
+
+        /* Music Player */
+        .music-player {
+            background-color: white;
+            border-radius: 50px;
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--shadow);
+            margin: 1.5rem auto;
+            max-width: 350px;
+        }
+
+        .music-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .music-cover {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .music-title {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .music-artist {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .music-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .music-btn {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .music-btn:hover {
+            background-color: var(--light-color);
+        }
+
+        .music-btn.play-pause {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Love Form */
+        .love-form {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--secondary-color);
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(255, 107, 139, 0.2);
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 139, 0.4);
+        }
+
+        /* Love Buttons */
+        .love-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .love-btn {
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            padding: 1.2rem 0.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-color);
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .love-btn i {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .love-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .love-btn:hover i {
+            color: white;
+        }
+
+        /* Floating Hearts */
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .floating-heart {
+            position: absolute;
+            opacity: 0;
+            animation: float 15s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.5;
+            }
+            90% {
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(-20vh) translateX(20vw) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            position: relative;
+        }
+
+        .footer-heart {
+            color: var(--accent-color);
+            animation: pulse 1.5s infinite;
+            display: inline-block;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .love-buttons {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-item {
+                flex: 0 0 90%;
+            }
+        }
+
+        /* Confetti */
+        .confetti-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+            display: none;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: var(--primary-color);
+            opacity: 0;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--light-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Hearts -->
+    <div class="heart-bg" id="heartBg"></div>
+    
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+    
+    <!-- Confetti -->
+    <div class="confetti-container" id="confettiContainer"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Untuk Apri Jonita Yenda yang Tercinta</h1>
+            <p class="subtitle">Setiap detik bersama Enda adalah halaman terindah dalam buku hidup Bayu</p>
+            <img src="images/Kenangan 1.jpg" alt="Kita" class="couple-img">
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="nav-scroll">
+            <div class="nav-item active" data-section="messages">Kata-Kata Sayang</div>
+            <div class="nav-item" data-section="gallery">Galeri Kenangan</div>
+            <div class="nav-item" data-section="letter">Surat Cinta</div>
+            <div class="nav-item" data-section="message">Kirim Pesan</div>
+        </div>
+    </div>
+    
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="music-info">
+            <img src="images/Kenangan 1.jpg" alt="Cover" class="music-cover">
+            <div>
+                <div class="music-title">Lagu Romantis Kita</div>
+                <div class="music-artist">Untuk Enda</div>
+            </div>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn" id="prevBtn"><i class="fas fa-backward"></i></button>
+            <button class="music-btn play-pause" id="playBtn"><i class="fas fa-play"></i></button>
+            <button class="music-btn" id="nextBtn"><i class="fas fa-forward"></i></button>
+        </div>
+    </div>
+    
+    <!-- Love Messages Section -->
+    <section class="section active" id="messages">
+        <h2>Kata-Kata Untukmu</h2>
+        
+        <div class="love-message">
+            <p class="message-text">Jika cinta itu seperti halaman web, maka endaa adalah CSS-bayu yang membuat hidup bayu penuh warna dan indah. Tanpa enda, bayu hanya kode yang membosankan.</p>
+            <p class="message-author">- bayu</p>
+        </div>
+        
+        <div class="love-message">
+            <p class="message-text">Enda seperti JavaScript untuk jiwa bayu - tanpa Endaa, hidup bayu tidak interaktif dan tidak memiliki tujuan. Bersama Enda, setiap hari adalah petualangan baru yang menakjubkan.</p>
+            <p class="message-author">- bayu</p>
+        </div>
+        
+        <div class="love-message">
+            <p class="message-text">Bayu ingin menjadi WiFi dan endaa jadi password-nya, karena bayu ingin menjadi satu-satunya yang bisa terhubung dengan hati endaa.</p>
+            <p class="message-author">- bayu</p>
+        </div>
+        
+        <div class="love-buttons">
+            <button class="love-btn" id="loveBtn">
+                <i class="fas fa-heart"></i>
+                Aku Sayang Kamu
+            </button>
+            <button class="love-btn" id="hugBtn">
+                <i class="fas fa-hands-helping"></i>
+                Peluk Virtual
+            </button>
+            <button class="love-btn" id="kissBtn">
+                <i class="fas fa-kiss-wink-heart"></i>
+                Kirim Cium
+            </button>
+            <button class="love-btn" id="missBtn">
+                <i class="fas fa-cloud-moon"></i>
+                Aku Rindu
+            </button>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+        <h2>Galeri Kenangan Kita</h2>
+        
+        <div class="gallery-container">
+            <div class="gallery" id="gallerySlider">
+                <div class="gallery-item">
+                    <img src="images/IMG-20250516-WA0002.jpg" alt="Kenangan 1" class="gallery-img">
+                    <div class="gallery-caption">pertama kita jalan</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG-20250516-WA0003.jpg" alt="Kenangan 2" class="gallery-img">
+                    <div class="gallery-caption">Jalan Jalan</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG-20250516-WA0004.jpg" alt="Kenangan 3" class="gallery-img">
+                    <div class="gallery-caption">Makan malam romantis</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Kenangan 1.jpg" alt="Kenangan 4" class="gallery-img">
+                    <div class="gallery-caption">Petualangan kita</div>
+                </div>
+            </div>
+            
+            <div class="gallery-nav" id="galleryDots">
+                <!-- Dots will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Love Letter Section -->
+    <section class="section" id="letter">
+        <h2>Surat Cinta Digital</h2>
+        
+        <div class="letter-container">
+            <div class="letter-paper">
+                <div class="letter-content">
+                    <p>Sayangku,</p>
+                    <p>Ketika bayu mulai menulis surat ini, bayu menyadari betapa sulitnya mengungkapkan semua perasaan bayu dalam kata-kata. endaa telah memberikan begitu banyak kebahagiaan dalam hidup bayu sehingga kata-kata biasa tidak akan pernah cukup.</p>
+                    <p>Setiap pagi ketika bayu bangun, pikiran pertama bayu adalah endaa. Setiap malam sebelum tidur, bayu berharap bisa memimpikan endaa. Di antara semua momen itu, enda mengisi setiap detik dengan cinta dan makna.</p>
+                    <p>Bayu bersyukur atas setiap tawa yang kita bagi, setiap air mata yang kita usap bersama, dan setiap tantangan yang kita hadapi sebagai satu tim. Endaa membuat bayu menjadi versi terbaik dari diri bayu sendiri.</p>
+                    <p>Tidak peduli apa yang terjadi, ketahuilah bahwa hati bayu selalu milik enda. bayu mencintai endaa lebih dari kata-kata bisa ungkapkan, lebih dari waktu bisa ukur, lebih dari apa pun di dunia ini.</p>
+                    <p>Selamanya milik endaa,</p>
+                </div>
+                <div class="letter-signature">bayu</div>
+                <div class="letter-date" id="currentDate"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Message Form Section -->
+    <section class="section" id="message">
+        <h2>Kirim Pesan Cinta</h2>
+        
+        <form class="love-form" id="loveForm">
+            <div class="form-group">
+                <label for="name">Nama Kamu</label>
+                <input type="text" id="name" placeholder="Masukkan nama kamu" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Pesan Cinta</label>
+                <textarea id="messageText" placeholder="Tulis pesan cinta untukku..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Dibuat dengan <span class="footer-heart">❤️</span> hanya untuk endaa</p>
+        <p>© <span id="currentYear"></span> - Cinta Kita</p>
+    </footer>
+    
+    <script>
+        // Set current date and year
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString('id-ID', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Navigation
+        const navItems = document.querySelectorAll('.nav-item');
+        const sections = document.querySelectorAll('.section');
+        
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Remove active class from all nav items and sections
+                navItems.forEach(nav => nav.classList.remove('active'));
+                sections.forEach(section => section.classList.remove('active'));
+                
+                // Add active class to clicked nav item
+                item.classList.add('active');
+                
+                // Show corresponding section
+                const sectionId = item.getAttribute('data-section');
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+        
+        // Gallery slider
+        const gallerySlider = document.getElementById('gallerySlider');
+        const galleryDots = document.getElementById('galleryDots');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        // Create dots
+        galleryItems.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('gallery-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                scrollToGalleryItem(index);
+            });
+            galleryDots.appendChild(dot);
+        });
+        
+        // Scroll to gallery item
+        function scrollToGalleryItem(index) {
+            const item = galleryItems[index];
+            gallerySlider.scrollTo({
+                left: item.offsetLeft - gallerySlider.offsetWidth / 2 + item.offsetWidth / 2,
+                behavior: 'smooth'
+            });
+            
+            // Update active dot
+            document.querySelectorAll('.gallery-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+        
+        // Update dots on scroll
+        gallerySlider.addEventListener('scroll', () => {
+            const scrollPosition = gallerySlider.scrollLeft + gallerySlider.offsetWidth / 2;
+            
+            galleryItems.forEach((item, index) => {
+                if (item.offsetLeft <= scrollPosition && item.offsetLeft + item.offsetWidth > scrollPosition) {
+                    document.querySelectorAll('.gallery-dot').forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                }
+            });
+        });
+        
+        // Music player
+        const playBtn = document.getElementById('playBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        const songs = [
+            {
+                title: "Lagu Romantis Kita",
+                artist: "Untuk Kamu",
+                src: "Rindu.mp3"
+            },
+            {
+                title: "Melodi Cinta",
+                artist: "Kita Berdua",
+                src: "penjagahati.mp3"
+            },
+            {
+                title: "Harmoni Jiwa",
+                artist: "Kamu & Aku",
+                src: "sempurnamp3"
+            }
+        ];
+        
+        let currentSong = 0;
+        const audio = new Audio(songs[currentSong].src);
+        let isPlaying = false;
+        
+        function updateMusicInfo() {
+            document.querySelector('.music-title').textContent = songs[currentSong].title;
+            document.querySelector('.music-artist').textContent = songs[currentSong].artist;
+        }
+        
+        playBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                audio.pause();
+                playBtn.innerHTML = '<i class="fas fa-play"></i>';
+            } else {
+                audio.play();
+                playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            }
+            isPlaying = !isPlaying;
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            currentSong = (currentSong - 1 + songs.length) % songs.length;
+            audio.src = songs[currentSong].src;
+            if (isPlaying) audio.play();
+            updateMusicInfo();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            currentSong = (currentSong + 1) % songs.length;
+            audio.src = songs[currentSong].src;
+            if (isPlaying) audio.play();
+            updateMusicInfo();
+        });
+        
+        audio.addEventListener('ended', () => {
+            currentSong = (currentSong + 1) % songs.length;
+            audio.src = songs[currentSong].src;
+            audio.play();
+            updateMusicInfo();
+        });
+        
+        // Love buttons
+        const loveBtn = document.getElementById('loveBtn');
+        const hugBtn = document.getElementById('hugBtn');
+        const kissBtn = document.getElementById('kissBtn');
+        const missBtn = document.getElementById('missBtn');
+        
+        loveBtn.addEventListener('click', () => {
+            createHearts(10);
+            showNotification('Aku juga sayang kamu! ❤️');
+        });
+        
+        hugBtn.addEventListener('click', () => {
+            createHearts(5);
+            showNotification('Pelukan virtual untukmu! 🤗');
+        });
+        
+        kissBtn.addEventListener('click', () => {
+            createHearts(8);
+            showNotification('Ciuman hangat untukmu! 😘');
+        });
+        
+        missBtn.addEventListener('click', () => {
+            createHearts(7);
+            showNotification('Aku juga merindukanmu! 🌙');
+        });
+        
+        // Create hearts animation
+        function createHearts(count) {
+            const heartBg = document.getElementById('heartBg');
+            
+            for (let i = 0; i < count; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = '❤️';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                heart.style.animationDelay = Math.random() * 2 + 's';
+                
+                heartBg.appendChild(heart);
+                
+                // Remove heart after animation
+                setTimeout(() => {
+                    heart.remove();
+                }, 10000);
+            }
+        }
+        
+        // Create floating hearts
+        function createFloatingHearts() {
+            const floatingHearts = document.getElementById('floatingHearts');
+            
+            for (let i = 0; i < 15; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('floating-heart');
+                heart.innerHTML = '❤️';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.fontSize = (Math.random() * 15 + 5) + 'px';
+                heart.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                heart.style.animationDelay = Math.random() * 5 + 's';
+                
+                floatingHearts.appendChild(heart);
+            }
+        }
+        
+        createFloatingHearts();
+        
+        // Show notification
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.position = 'fixed';
+            notification.style.bottom = '20px';
+            notification.style.left = '50%';
+            notification.style.transform = 'translateX(-50%)';
+            notification.style.backgroundColor = 'white';
+            notification.style.color = 'var(--accent-color)';
+            notification.style.padding = '10px 20px';
+            notification.style.borderRadius = '50px';
+            notification.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+            notification.style.zIndex = '1000';
+            notification.style.animation = 'fadeIn 0.3s, fadeOut 0.3s 2.7s';
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+        
+        // Love form
+        const loveForm = document.getElementById('loveForm');
+        
+        loveForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('messageText').value;
+            
+            // Send to WhatsApp
+            const phoneNumber = '085212637719';
+            const encodedMessage = encodeURIComponent(`Hai sayang, ini ${name}.\n\n${message}\n\n❤️`);
+            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+            
+            // Show confetti
+            showConfetti();
+            
+            // Reset form
+            loveForm.reset();
+            
+            // Show notification
+            showNotification('Pesan cintamu telah terkirim! ❤️');
+        });
+        
+        // Confetti effect
+        function showConfetti() {
+            const confettiContainer = document.getElementById('confettiContainer');
+            confettiContainer.style.display = 'block';
+            confettiContainer.innerHTML = '';
+            
+            const colors = ['#ff6b8b', '#ffb8c6', '#ff4757', '#ff8fab', '#ffc0cb'];
+            
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.width = (Math.random() * 10 + 5) + 'px';
+                confetti.style.height = (Math.random() * 10 + 5) + 'px';
+                confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear forwards`;
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                
+                confettiContainer.appendChild(confetti);
+            }
+            
+            setTimeout(() => {
+                confettiContainer.style.display = 'none';
+            }, 5000);
+        }
+        
+        // Add keyframe animation for notification fadeOut
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fadeOut {
+                from { opacity: 1; transform: translateX(-50%) translateY(0); }
+                to { opacity: 0; transform: translateX(-50%) translateY(20px); }
+            }
+            
+            @keyframes fall {
+                0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+                100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
